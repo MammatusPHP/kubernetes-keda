@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mammatus\Kubernetes\Keda;
+namespace Mammatus\Kubernetes\Keda\Attributes;
 
 use Mammatus\Kubernetes\Contracts\AddOn\Deployment;
 
@@ -26,5 +26,17 @@ final readonly class ScaledObject implements Deployment
     public function helper(): string
     {
         return 'mammatus.keda.deployment';
+    }
+
+    function jsonSerialize(): array
+    {
+        return [
+            'idleReplicaCount' => $this->idleReplicaCount,
+            'minReplicaCount' => $this->minReplicaCount,
+            'maxReplicaCount' => $this->maxReplicaCount,
+            'cooldownPeriod' => $this->cooldownPeriod,
+            'advanced' => $this->advanced,
+            'triggers' => $this->triggers,
+        ];
     }
 }

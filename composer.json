@@ -11,12 +11,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Mammatus\\Kubernetes\\Attributes\\": "src/"
+      "Mammatus\\Kubernetes\\Keda\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Mammatus\\Tests\\Kubernetes\\Attributes\\": "tests/"
+      "Mammatus\\Tests\\Kubernetes\\Keda\\": "tests/"
     }
   },
   "config": {
