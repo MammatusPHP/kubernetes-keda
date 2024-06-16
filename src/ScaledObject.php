@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace Mammatus\Kubernetes\Keda;
 
+use Mammatus\Kubernetes\Contracts\AddOn;
 use Mammatus\Kubernetes\Contracts\AddOn\Deployment;
 
-final readonly class ScaledObject implements Deployment
+final readonly class ScaledObject implements AddOn, Deployment
 {
     /**
      * @param array<array{type: string, metadata: array{queueName: string, mode: string, value: string}, authenticationRef: array{parameter: string, name: string, key: string}}> $triggers
