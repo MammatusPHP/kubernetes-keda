@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Mammatus\Kubernetes\Keda\Attributes;
+namespace Mammatus\Kubernetes\Keda;
 
 use Mammatus\Kubernetes\Contracts\AddOn\Deployment;
 
-#[\Attribute(\Attribute::TARGET_CLASS)]
 final readonly class ScaledObject implements Deployment
 {
     /**
