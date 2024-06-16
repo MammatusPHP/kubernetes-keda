@@ -23,6 +23,11 @@ final readonly class ScaledObject implements Deployment
     {
     }
 
+    public function type(): string
+    {
+        return 'deployment';
+    }
+
     public function helper(): string
     {
         return 'mammatus.keda.deployment';

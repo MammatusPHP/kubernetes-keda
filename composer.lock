@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MammatusPHP/kubernetes-contracts.git",
-                "reference": "d630e3e26d134f57aaeb18dd85b706d42afc7982"
+                "reference": "224e0244fe4893f48c3fe310b903295dfc94f14a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MammatusPHP/kubernetes-contracts/zipball/d630e3e26d134f57aaeb18dd85b706d42afc7982",
-                "reference": "d630e3e26d134f57aaeb18dd85b706d42afc7982",
+                "url": "https://api.github.com/repos/MammatusPHP/kubernetes-contracts/zipball/224e0244fe4893f48c3fe310b903295dfc94f14a",
+                "reference": "224e0244fe4893f48c3fe310b903295dfc94f14a",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-06-16T16:02:24+00:00"
+            "time": "2024-06-16T16:32:00+00:00"
         }
     ],
     "packages-dev": [
