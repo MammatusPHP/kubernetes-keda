@@ -36,12 +36,16 @@ final readonly class ScaledObject implements AddOn, Deployment
     function jsonSerialize(): array
     {
         return [
-            'idleReplicaCount' => $this->idleReplicaCount,
-            'minReplicaCount' => $this->minReplicaCount,
-            'maxReplicaCount' => $this->maxReplicaCount,
-            'cooldownPeriod' => $this->cooldownPeriod,
-            'advanced' => $this->advanced,
-            'triggers' => $this->triggers,
+            'type' => 'deployment',
+            'helper' => 'mammatus.keda.deployment',
+            'arguments' => [
+                'idleReplicaCount' => $this->idleReplicaCount,
+                'minReplicaCount' => $this->minReplicaCount,
+                'maxReplicaCount' => $this->maxReplicaCount,
+                'cooldownPeriod' => $this->cooldownPeriod,
+                'advanced' => $this->advanced,
+                'triggers' => $this->triggers,
+            ],
         ];
     }
 }
