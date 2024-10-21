@@ -4,7 +4,7 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "mammatus/kubernetes-contracts": "dev-main"
+    "mammatus/kubernetes-contracts": "^1"
   },
   "require-dev": {
     "wyrihaximus/async-test-utilities": "^8.0.1"
