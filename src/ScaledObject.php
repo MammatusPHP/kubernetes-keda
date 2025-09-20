@@ -33,7 +33,7 @@ final readonly class ScaledObject implements AddOn, Deployment
         return 'mammatus.keda.deployment';
     }
 
-    /** @return array{type: string, helper: string, arguments: array{idleReplicaCount: int, minReplicaCount: int, maxReplicaCount: int, cooldownPeriod: int, advanced: array<mixed>, triggers: array<array{type: string, metadata: array{queueName: string, mode: string, value: string}, authenticationRef: array{parameter: string, name: string, key: string}}>}} */
+    /** @return array{type: string, helper: string, arguments: array{idleReplicaCount: int, minReplicaCount: int, maxReplicaCount: int, cooldownPeriod: int, advanced: array<mixed>, triggers: array<array{type: string, metadata: array{queueName: string, mode: string, value: string}, authenticationRef: array{parameter: string, name: string, key: string}}|array{type: string, metadata: array{serverAddress: string, query: string, threshold: string}}>}} */
     public function jsonSerialize(): array
     {
         return [
