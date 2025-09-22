@@ -3,11 +3,13 @@
   "description": "\ud83d\udc19 Kubernetes Keda related utilities",
   "license": "MIT",
   "require": {
-    "php": "^8.2",
+    "php": "^8.4",
+    "ext-json": "*",
     "mammatus/kubernetes-contracts": "^1"
   },
   "require-dev": {
-    "wyrihaximus/async-test-utilities": "^8.0.1"
+    "wyrihaximus/async-test-utilities": "^10.1.0",
+    "wyrihaximus/makefiles": "^0.7.5"
   },
   "autoload": {
     "psr-4": {
@@ -29,10 +31,13 @@
       "infection/extension-installer": true,
       "mammatus/cron": true,
       "mindplay/composer-locator": true,
-      "wyrihaximus/broadcast": true
+      "phpstan/extension-installer": true,
+      "wyrihaximus/broadcast": true,
+      "wyrihaximus/makefiles": true,
+      "wyrihaximus/test-utilities": true
     },
     "platform": {
-      "php": "8.2.13"
+      "php": "8.4.13"
     },
     "sort-packages": true
   },
@@ -50,12 +55,10 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "composer normalize",
-      "composer update --lock --no-scripts"
+      "make on-install-or-update || true"
     ],
     "post-update-cmd": [
-      "composer normalize",
-      "composer update --lock --no-scripts"
+      "make on-install-or-update || true"
     ]
   }
 }
