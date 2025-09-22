@@ -13,7 +13,13 @@ jobs:
     name: Trigger Renovate Run
     runs-on: ubuntu-latest
     steps:
-      - name: List repositories
+      - name: Split
+        uses: winterjung/split@v2
+        id: split
+        with:
+          separator: '/'
+          msg: '${{ github.repository_owner }}'
+      - name: Trigger Renovate Run
         uses: actions/github-script@v8
         id: repositories
         with:
@@ -25,7 +31,7 @@ jobs:
               workflow_id: 'renovate.yaml',
               ref: 'main',
               inputs: {
-                repo: '${{ github.repository }}',
+                repo: '${{ steps.split.outputs._1 }}',
               },
               headers: {
                 'X-GitHub-Api-Version': '2022-11-28'
