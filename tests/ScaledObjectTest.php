@@ -12,9 +12,7 @@ use WyriHaximus\TestUtilities\TestCase;
 
 final class ScaledObjectTest extends TestCase
 {
-    /**
-     * @test
-     */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function json(): void
     {
         $scaledObject = new ScaledObject(
@@ -28,9 +26,7 @@ final class ScaledObjectTest extends TestCase
 
         self::assertSame('{"type":"deployment","helper":"mammatus.keda.deployment","arguments":{"idleReplicaCount":0,"minReplicaCount":1,"maxReplicaCount":13,"cooldownPeriod":666,"advanced":[],"triggers":[]}}', json_encode($scaledObject));
     }
-    /**
-     * @test
-     */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function trigger(): void
     {
         $scaledObject = new ScaledObject(
