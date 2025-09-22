@@ -18,7 +18,7 @@ jobs:
         id: split
         with:
           separator: '/'
-          msg: '${{ github.repository_owner }}'
+          msg: '${{ github.repository }}'
       - name: Trigger Renovate Run
         uses: actions/github-script@v8
         id: repositories
