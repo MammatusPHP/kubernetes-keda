@@ -7,7 +7,7 @@
     "mammatus/kubernetes-contracts": "^1"
   },
   "require-dev": {
-    "wyrihaximus/async-test-utilities": "^8.0.1"
+    "wyrihaximus/async-test-utilities": "^8.0.5"
   },
   "autoload": {
     "psr-4": {
