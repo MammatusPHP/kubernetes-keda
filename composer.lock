@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11953a87e88827efe0e82e88f403f4df",
+    "content-hash": "4d919674b6b373ac16628177958585f5",
     "packages": [
         {
             "name": "mammatus/kubernetes-contracts",
@@ -2173,16 +2173,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.31.2",
+            "version": "0.31.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "242785d48ac2dc00a1d3a77b2048b289dc82cbc9"
+                "reference": "a66e38972304f5c742d4ee19adec132c45bb5a46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/242785d48ac2dc00a1d3a77b2048b289dc82cbc9",
-                "reference": "242785d48ac2dc00a1d3a77b2048b289dc82cbc9",
+                "url": "https://api.github.com/repos/infection/infection/zipball/a66e38972304f5c742d4ee19adec132c45bb5a46",
+                "reference": "a66e38972304f5c742d4ee19adec132c45bb5a46",
                 "shasum": ""
             },
             "require": {
@@ -2288,7 +2288,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.31.2"
+                "source": "https://github.com/infection/infection/tree/0.31.7"
             },
             "funding": [
                 {
@@ -2300,7 +2300,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-08-21T06:43:51+00:00"
+            "time": "2025-10-12T08:32:39+00:00"
         },
         {
             "name": "infection/mutator",
@@ -4615,16 +4615,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.2.0",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "3c5a641c39f2def0c93d36df118fb2e75cfc2aae"
+                "reference": "d27f976a332a87b5d03553c2e6f04adbe5da034f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/3c5a641c39f2def0c93d36df118fb2e75cfc2aae",
-                "reference": "3c5a641c39f2def0c93d36df118fb2e75cfc2aae",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/d27f976a332a87b5d03553c2e6f04adbe5da034f",
+                "reference": "d27f976a332a87b5d03553c2e6f04adbe5da034f",
                 "shasum": ""
             },
             "require": {
@@ -4663,7 +4663,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.2.0"
+                "source": "https://github.com/rectorphp/rector/tree/2.2.3"
             },
             "funding": [
                 {
@@ -4671,7 +4671,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-06T12:18:16+00:00"
+            "time": "2025-10-11T21:50:23+00:00"
         },
         {
             "name": "revolt/event-loop",
@@ -8791,34 +8791,34 @@
         },
         {
             "name": "wyrihaximus/async-test-utilities",
-            "version": "10.2.0",
+            "version": "10.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-async-test-utilities.git",
-                "reference": "69b01179ee1383b753c2df959f3f9b6c402266c8"
+                "reference": "8cdf3bd93cff69251b48ec375638cc4d693e88ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-async-test-utilities/zipball/69b01179ee1383b753c2df959f3f9b6c402266c8",
-                "reference": "69b01179ee1383b753c2df959f3f9b6c402266c8",
+                "url": "https://api.github.com/repos/WyriHaximus/php-async-test-utilities/zipball/8cdf3bd93cff69251b48ec375638cc4d693e88ff",
+                "reference": "8cdf3bd93cff69251b48ec375638cc4d693e88ff",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.4",
-                "phpunit/phpunit": "^12.3.15",
+                "phpunit/phpunit": "^12.4.0",
                 "react/async": "^4.3.0",
                 "react/event-loop": "^1.5.0",
                 "react/promise": "^3.3.0",
                 "wyrihaximus/phpstan-react": "^2.0.0",
                 "wyrihaximus/react-phpunit-run-tests-in-fiber": "^3.0.0",
-                "wyrihaximus/test-utilities": "^8.3.0"
+                "wyrihaximus/test-utilities": "^8.5.0"
             },
             "conflict": {
                 "composer/compoer": "<2.6.0"
             },
             "require-dev": {
                 "react/promise-timer": "^1.11.0",
-                "wyrihaximus/makefiles": "^0.7.5"
+                "wyrihaximus/makefiles": "^0.7.6"
             },
             "type": "library",
             "extra": {
@@ -8846,7 +8846,7 @@
             "description": "Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-async-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-async-test-utilities/tree/10.2.0"
+                "source": "https://github.com/WyriHaximus/php-async-test-utilities/tree/10.4.0"
             },
             "funding": [
                 {
@@ -8854,7 +8854,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-29T23:58:20+00:00"
+            "time": "2025-10-08T20:01:15+00:00"
         },
         {
             "name": "wyrihaximus/coding-standard",
@@ -9005,29 +9005,29 @@
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
-            "version": "10.19.0",
+            "version": "10.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper.git",
-                "reference": "bab4604c4388df7668ce57bf50b316ceed98f01a"
+                "reference": "2eec9c5147e457fa44eabb6c310abe98539a1ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/bab4604c4388df7668ce57bf50b316ceed98f01a",
-                "reference": "bab4604c4388df7668ce57bf50b316ceed98f01a",
+                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/2eec9c5147e457fa44eabb6c310abe98539a1ab6",
+                "reference": "2eec9c5147e457fa44eabb6c310abe98539a1ab6",
                 "shasum": ""
             },
             "require": {
-                "ergebnis/phpstan-rules": "^2.10.5",
+                "ergebnis/phpstan-rules": "^2.12.0",
                 "php": "^8.3",
                 "phpstan/extension-installer": "^1.4.3",
-                "phpstan/phpstan": "^2.1.22",
+                "phpstan/phpstan": "^2.1.30",
                 "phpstan/phpstan-deprecation-rules": "^2.0.3",
                 "phpstan/phpstan-mockery": "^2.0.0",
                 "phpstan/phpstan-phpunit": "^2.0.7",
-                "phpstan/phpstan-strict-rules": "^2.0.6",
-                "shipmonk/dead-code-detector": "^0.13.2",
-                "shipmonk/phpstan-rules": "^4.1.5",
+                "phpstan/phpstan-strict-rules": "^2.0.7",
+                "shipmonk/dead-code-detector": "^0.13.3",
+                "shipmonk/phpstan-rules": "^4.2.1",
                 "staabm/phpstan-psr3": "^1.0.3",
                 "tomasvotruba/type-coverage": "^2.0.2",
                 "yamadashy/phpstan-friendly-formatter": "^1.2.0"
@@ -9053,7 +9053,7 @@
             "description": "🌯 PHPStan rules wrapper",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/issues",
-                "source": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/tree/10.19.0"
+                "source": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/tree/10.20.0"
             },
             "funding": [
                 {
@@ -9061,7 +9061,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-14T19:54:06+00:00"
+            "time": "2025-10-08T15:56:40+00:00"
         },
         {
             "name": "wyrihaximus/react-phpunit-run-tests-in-fiber",
@@ -9123,16 +9123,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "8.3.0",
+            "version": "8.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "5d4e5af5580e0bc24f36e3477bf336652f1fcd17"
+                "reference": "8751f61259ab8f58edce63ab36c226f09be5ad62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/5d4e5af5580e0bc24f36e3477bf336652f1fcd17",
-                "reference": "5d4e5af5580e0bc24f36e3477bf336652f1fcd17",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/8751f61259ab8f58edce63ab36c226f09be5ad62",
+                "reference": "8751f61259ab8f58edce63ab36c226f09be5ad62",
                 "shasum": ""
             },
             "require": {
@@ -9142,26 +9142,26 @@
                 "ext-hash": "^8.4",
                 "ext-json": "^8.4",
                 "icanhazstring/composer-unused": "^0.9.5",
-                "infection/infection": "^0.31.2",
+                "infection/infection": "^0.31.4",
                 "maglnet/composer-require-checker": "^4.16.1",
                 "mockery/mockery": "^1.6.12",
                 "php": "^8.4",
                 "php-parallel-lint/php-console-highlighter": "^1.0",
                 "php-parallel-lint/php-parallel-lint": "^1.4.0",
-                "phpstan/phpstan": "^2.1.29",
-                "phpunit/phpunit": "^12.3.15",
-                "rector/rector": "^2.1.7",
+                "phpstan/phpstan": "^2.1.30",
+                "phpunit/phpunit": "^12.4.0",
+                "rector/rector": "^2.2.1",
                 "roave/backward-compatibility-check": "^8.14.0",
                 "squizlabs/php_codesniffer": "^3.13.4",
                 "wyrihaximus/coding-standard": "^2.22.0",
-                "wyrihaximus/phpstan-rules-wrapper": "^10.19.0"
+                "wyrihaximus/phpstan-rules-wrapper": "^10.20.0"
             },
             "conflict": {
                 "composer/pcre": "<3.3.2",
                 "wyrihaximus/makefiles": "<0.5.0"
             },
             "require-dev": {
-                "wyrihaximus/makefiles": "^0.7.5"
+                "wyrihaximus/makefiles": "^0.7.6"
             },
             "suggest": {
                 "wyrihaximus/async-test-utilities": "The recommended addition to this package when building ReactPHP packages and projects.",
@@ -9194,7 +9194,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/8.3.0"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/8.5.0"
             },
             "funding": [
                 {
@@ -9202,7 +9202,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-29T14:03:33+00:00"
+            "time": "2025-10-08T17:48:01+00:00"
         },
         {
             "name": "yamadashy/phpstan-friendly-formatter",
