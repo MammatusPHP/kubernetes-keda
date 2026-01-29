@@ -6,6 +6,7 @@ namespace Mammatus\Kubernetes\Keda;
 
 use JsonSerializable;
 
+/** @api */
 final readonly class Trigger implements JsonSerializable
 {
     /**
