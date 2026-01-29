@@ -9,6 +9,7 @@ use Mammatus\Kubernetes\Contracts\AddOn\Deployment;
 
 use function array_map;
 
+/** @api */
 final readonly class ScaledObject implements AddOn, Deployment
 {
     /**
