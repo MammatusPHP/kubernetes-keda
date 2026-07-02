@@ -2,17 +2,18 @@
 
 declare(strict_types=1);
 
-
 namespace Mammatus\Tests\Kubernetes\Keda;
 
-use Mammatus\Kubernetes\Attributes\Resources;
 use Mammatus\Kubernetes\Keda\ScaledObject;
 use Mammatus\Kubernetes\Keda\Trigger;
+use PHPUnit\Framework\Attributes\Test;
 use WyriHaximus\TestUtilities\TestCase;
+
+use function json_encode;
 
 final class ScaledObjectTest extends TestCase
 {
-    #[\PHPUnit\Framework\Attributes\Test]
+    #[Test]
     public function json(): void
     {
         $scaledObject = new ScaledObject(
@@ -26,7 +27,8 @@ final class ScaledObjectTest extends TestCase
 
         self::assertSame('{"type":"deployment","helper":"mammatus.keda.deployment","arguments":{"idleReplicaCount":0,"minReplicaCount":1,"maxReplicaCount":13,"cooldownPeriod":666,"advanced":[],"triggers":[]}}', json_encode($scaledObject));
     }
-    #[\PHPUnit\Framework\Attributes\Test]
+
+    #[Test]
     public function trigger(): void
     {
         $scaledObject = new ScaledObject(
