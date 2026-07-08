@@ -13,7 +13,7 @@ final readonly class Trigger implements JsonSerializable
      * @param array{queueName:string,mode:string,value:string}|array{serverAddress:string,query:string,threshold:string} $metadata
      * @param array<mixed>|null                                                                                          $authenticationRef
      *
-     * @phpstan-ignore-next-line
+     * @phpstan-ignore ergebnis.noConstructorParameterWithDefaultValue,ergebnis.noParameterWithNullableTypeDeclaration,ergebnis.noParameterWithNullDefaultValue
      */
     public function __construct(
         public string $type,

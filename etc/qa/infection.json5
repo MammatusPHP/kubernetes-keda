@@ -1,8 +1,8 @@
 {
-    "timeout": 300,
+    "timeout": 120,
     "source": {
         "directories": [
-            "src"
+            "../../src"
         ]
     },
     "logs": {
@@ -12,39 +12,10 @@
         "perMutator": "../../var/infection-per-mutator.md",
         "github": true
     },
+    "minMsi": 100,
+    "minCoveredMsi": 100,
+    "ignoreMsiWithNoMutations": true,
     "mutators": {
-        "@default": true,
-        "ArrayItemRemoval": {
-            "ignore": [
-                "WyriHaximus\\React\\Mutex\\AbstractMutexTestCase::thatYouCantRequiredTheSameLockTwice"
-            ]
-        },
-        "InstanceOf_": {
-            "ignore": [
-                "WyriHaximus\\React\\Mutex\\Memory::release"
-            ]
-        },
-        "LogicalNot": {
-            "ignore": [
-                "WyriHaximus\\React\\Mutex\\Memory::release"
-            ]
-        },
-        "LogicalOr": {
-            "ignore": [
-                "WyriHaximus\\React\\Mutex\\Memory::release"
-            ]
-        },
-        "MethodCallRemoval": {
-            "ignore": [
-                "WyriHaximus\\React\\Mutex\\AbstractMutexTestCase::thatYouCantRequiredTheSameLockTwice",
-                "WyriHaximus\\React\\Mutex\\AbstractMutexTestCase::cannotReleaseLockWithWrongRng"
-            ]
-        },
-        "PublicVisibility": {
-            "ignore": [
-                "WyriHaximus\\React\\Mutex\\AbstractMutexTestCase::thatYouCantRequiredTheSameLockTwice",
-                "WyriHaximus\\React\\Mutex\\AbstractMutexTestCase::cannotReleaseLockWithWrongRng"
-            ]
-        }
+        "@default": true
     }
 }
