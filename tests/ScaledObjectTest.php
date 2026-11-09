@@ -14,6 +14,36 @@ use function json_encode;
 final class ScaledObjectTest extends TestCase
 {
     #[Test]
+    public function type(): void
+    {
+        $scaledObject = new ScaledObject(
+            0,
+            1,
+            13,
+            666,
+            [],
+            [],
+        );
+
+        self::assertSame('deployment', $scaledObject->type());
+    }
+
+    #[Test]
+    public function helper(): void
+    {
+        $scaledObject = new ScaledObject(
+            0,
+            1,
+            13,
+            666,
+            [],
+            [],
+        );
+
+        self::assertSame('mammatus.keda.deployment', $scaledObject->helper());
+    }
+
+    #[Test]
     public function json(): void
     {
         $scaledObject = new ScaledObject(
